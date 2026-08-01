@@ -1,0 +1,51 @@
+generated: '2026-08-01'
+method: probed
+source: live probes of /.well-known/ and contract-discovery paths on Climeworks hosts
+result: none - no /.well-known/ document is published on any Climeworks host
+hosts:
+- host: https://climeworks.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /openapi.json
+    status: 403
+    note: WAF/bot-protection response, not a spec
+  - path: /robots.txt
+    status: 200
+    body: "User-agent: *\nDisallow:"
+    note: allow-all robots.txt; no sitemap directive, no AI-crawler directives
+- host: https://platform.climeworks.com
+  note: Salesforce Experience Cloud customer platform; every /.well-known/ path returns
+    401 from the Salesforce community login gate, not a published document
+  documents:
+  - path: /.well-known/agent-card.json
+    status: 401
+  - path: /.well-known/security.txt
+    status: 401
+hosts_that_do_not_resolve:
+- api.climeworks.com
+- developer.climeworks.com
+- docs.climeworks.com
+- status.climeworks.com
+x-evidence:
+  fetched: '2026-08-01'
+  method: curl HEAD/GET, follow redirects, 15s timeout
+  caveat: >-
+    climeworks.com sits behind bot protection that began answering 403 to this
+    prober's IP part-way through the pass. The 404s recorded above were observed
+    before that block and are genuine origin 404s (123KB Next.js not-found page
+    bodies), not WAF responses.

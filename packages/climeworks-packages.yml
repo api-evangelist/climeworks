@@ -1,0 +1,45 @@
+generated: '2026-08-01'
+method: searched
+source: registry searches of npm, PyPI, RubyGems, crates.io, Packagist (2026-08-01)
+notes: >-
+  Climeworks publishes no client SDK, because it publishes no public API. The single
+  package found under a first-party namespace is an internal shared TypeScript types
+  library for a "DAC Digital Twin" project, published once in 2022 and never updated.
+  It is recorded here for provenance only - it is NOT an API client library, so no
+  `SDKs` pointer is wired in apis.yml and the sdk_count checks are correctly left
+  unearned.
+packages:
+- language: typescript
+  registry: npm
+  name: "@climeworks/dac-dt-shared-types"
+  url: https://www.npmjs.com/package/@climeworks/dac-dt-shared-types
+  install: npm install @climeworks/dac-dt-shared-types
+  version: 1.0.0
+  published: '2022-03-24'
+  last_modified: '2022-04-04'
+  license: ISC
+  official: true
+  official_evidence: published under the @climeworks npm scope by maintainer
+    seg@climeworks.com
+  source_code: https://github.com/sergeigirshev/dac-dt-shared-types
+  description: Shared types and entities for DAC Digital Twin project
+  is_api_client: false
+registries_checked:
+- registry: npm
+  query: climeworks
+  result: 1 package (@climeworks/dac-dt-shared-types)
+- registry: pypi
+  query: climeworks
+  result: 404 - no project
+- registry: rubygems
+  query: climeworks
+  result: no results
+- registry: crates.io
+  query: climeworks
+  result: no results
+- registry: packagist
+  query: climeworks
+  result: 0 results
+- registry: github
+  query: orgs/climeworks
+  result: org exists (Climeworks AG, id 61453651) with 0 public repositories

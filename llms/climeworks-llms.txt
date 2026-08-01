@@ -1,0 +1,48 @@
+# Climeworks
+
+> Climeworks AG is a Swiss carbon dioxide removal company founded in 2009 as an ETH Zurich spin-off. It builds and operates direct air capture (DAC) plants that filter CO2 from ambient air and permanently mineralize it underground with storage partners such as Carbfix in Iceland (the Orca and Mammoth facilities), and it sells risk-mitigated carbon removal portfolios to corporate buyers through Climeworks Solutions.
+
+Climeworks is a supplier of carbon removal, not a software vendor. As of 2026-08-01 it publishes **no public API, no developer portal, no API documentation and no machine-readable API contract**. Buyers who want programmatic access to carbon removal purchase it through third-party carbon marketplaces (Cloverly, Patch and similar) rather than from Climeworks directly. Do not assume or invent a `api.climeworks.com` endpoint - that host does not resolve.
+
+## Company
+
+- [Climeworks](https://climeworks.com/): company website
+- [Carbon removal technology](https://climeworks.com/carbon-removal-technology): how the direct air capture and storage process works
+- [Carbon removal solutions](https://climeworks.com/carbon-removal-solutions): corporate carbon removal portfolios
+- [Buy carbon removal](https://climeworks.com/actnow): purchase page and price points
+- [Our expertise](https://climeworks.com/our-expertise): carbon removal insights for net-zero strategy
+- [Wikipedia: Climeworks](https://en.wikipedia.org/wiki/Climeworks): independent company overview
+
+## Support and account
+
+- [Contact](https://climeworks.com/contact): contact form and support routes
+- [FAQs](https://climeworks.com/faqs): customer and product FAQ
+- [Customer platform login](https://platform.climeworks.com/s/login): Salesforce Experience Cloud portal where corporate buyers track carbon removal orders and deliveries
+
+## News and legal
+
+- [News](https://climeworks.com/news): company news and press releases
+- [Terms of use](https://climeworks.com/website-terms-use)
+- [General terms and conditions](https://climeworks.com/general-terms-and-conditions)
+- [Privacy policy](https://climeworks.com/website-privacy-policy)
+- [Careers](https://climeworks.com/careers)
+
+## Certification and integrity
+
+- [Third-party certification FAQ](https://climeworks.com/faq/is-climeworks-certified-by-a-3rd-party): who audits Climeworks
+- [DNV validation of Orca under ISO 14064-2](https://climeworks.com/press-release/climeworks-achievedvalidationfromdnv)
+- [First DAC company certified under the Puro Standard](https://climeworks.com/press-release/climeworks-first-dac-company-certified-under-puro-standard)
+- [MRV and integrity in the carbon removal industry](https://climeworks.com/mrv-and-integrity-in-the-carbon-removal-industry)
+
+## Code and packages
+
+- [GitHub: Climeworks AG](https://github.com/climeworks): organization exists, zero public repositories
+- [@climeworks/dac-dt-shared-types](https://www.npmjs.com/package/@climeworks/dac-dt-shared-types): internal shared TypeScript types for a DAC Digital Twin project (2022, one release). Not an API client library.
+
+## API Evangelist artifacts
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/climeworks/refs/heads/main/apis.yml): APIs.json index for Climeworks
+- [Well-known probe](https://raw.githubusercontent.com/api-evangelist/climeworks/refs/heads/main/well-known/climeworks-well-known.yml): recorded result of the discovery probes (all misses)
+- [Packages](https://raw.githubusercontent.com/api-evangelist/climeworks/refs/heads/main/packages/climeworks-packages.yml)
+- [Conformance](https://raw.githubusercontent.com/api-evangelist/climeworks/refs/heads/main/conformance/climeworks-conformance.yml)
+- [Domain security](https://raw.githubusercontent.com/api-evangelist/climeworks/refs/heads/main/security/climeworks-domain-security.yml)

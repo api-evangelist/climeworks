@@ -1,0 +1,67 @@
+generated: '2026-08-01'
+method: searched
+source: Climeworks press releases and FAQ (2026-08-01 web search)
+scope: >-
+  Climeworks publishes no API, so there are no API/cross-cutting technical standards
+  to assert. What it does publish - and what a buyer of its output actually evaluates -
+  is conformance to carbon-dioxide-removal measurement, reporting and verification
+  (MRV) standards. Those are recorded here. The API/protocol standards block below is
+  recorded as not-applicable rather than false, so this file is never mistaken for a
+  compliance posture it does not claim.
+standards:
+- id: iso-14064-2
+  name: ISO 14064-2 (GHG project quantification, monitoring and reporting)
+  conforms: true
+  evidence: >-
+    Climeworks' Orca direct air capture plant received independent third-party
+    validation from DNV according to ISO 14064-2 - stated by Climeworks as the first
+    third-party validation of a direct air capture project targeting permanent CDR.
+  source: https://climeworks.com/press-release/climeworks-achievedvalidationfromdnv
+- id: puro-standard
+  name: Puro Standard (Puro.earth engineered carbon removal)
+  conforms: true
+  evidence: >-
+    Climeworks is the first direct air capture company certified under the Puro
+    Standard, for CO2 removal at the Orca plant in Iceland; audits of the Climeworks
+    DAC process and Carbfix mineralization are performed by DNV.
+  source: https://climeworks.com/press-release/climeworks-first-dac-company-certified-under-puro-standard
+- id: dac-plus-s-methodology
+  name: DAC+S full-chain certification methodology (Climeworks + Carbfix)
+  conforms: true
+  evidence: >-
+    Climeworks and Carbfix co-developed a full-chain certification methodology for CO2
+    removal via direct air capture with underground mineralization; the methodology was
+    validated by DNV.
+  source: https://climeworks.com/news/climeworks-and-carbfix-to-certify-under-puro-earth
+third_party_verifier:
+  name: DNV
+  role: independent validation and verification body for the above
+  source: https://climeworks.com/faq/is-climeworks-certified-by-a-3rd-party
+api_standards:
+- id: openapi
+  conforms: false
+  applicable: false
+  evidence: no public API contract published (see well-known/climeworks-well-known.yml)
+- id: oauth2
+  conforms: false
+  applicable: false
+- id: openid-connect
+  conforms: false
+  applicable: false
+- id: rfc9457-problem-details
+  conforms: false
+  applicable: false
+- id: asyncapi
+  conforms: false
+  applicable: false
+- id: rfc9116-security-txt
+  conforms: false
+  applicable: true
+  evidence: /.well-known/security.txt returns 404 on climeworks.com
+information_security_compliance:
+  found: false
+  note: >-
+    No trust center, SOC 2, ISO 27001 or equivalent information-security certification
+    page was found by probe-security-programs.py or by search. No `Compliance` pointer
+    is wired in apis.yml - the DNV/Puro certifications above are product-integrity
+    certifications for carbon removal, not a published infosec compliance program.

@@ -1,8 +1,18 @@
 aid: climeworks
 name: Climeworks
-description: 'Climeworks is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Climeworks AG is a Swiss carbon dioxide removal company founded in 2009
+  as an ETH Zurich spin-off by Christoph Gebald and Jan Wurzbacher. It designs, builds
+  and operates direct air capture (DAC) plants that filter CO2 out of ambient air through
+  an adsorption-desorption cycle and then permanently mineralize it underground with
+  storage partners such as Carbfix in Iceland - the Orca and Mammoth facilities. Through
+  Climeworks Solutions it also sells risk-mitigated carbon removal portfolios that blend
+  its own DAC removals with certified third-party suppliers, delivered within seven years
+  of purchase and tracked by corporate buyers in an online customer platform. Climeworks
+  is a supplier of carbon removal rather than a software vendor: it publishes no public
+  developer portal, no API documentation and no machine-readable API contract, and its
+  removals reach programmatic buyers through third-party carbon marketplaces instead.'
 url: https://raw.githubusercontent.com/api-evangelist/climeworks/refs/heads/main/apis.yml
+image: https://avatars.githubusercontent.com/u/61453651?v=4
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,12 +22,60 @@ created: '2026-08-01'
 modified: '2026-08-01'
 tags:
 - Company
+- Carbon Removal
+- Direct Air Capture
+- Carbon Dioxide Removal
+- Climate Tech
+- Sustainability
+- Energy
+- Switzerland
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-08-01'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/climeworks-domain-security.yml
+- type: Packages
+  url: packages/climeworks-packages.yml
+- type: Conformance
+  url: conformance/climeworks-conformance.yml
+- type: LLMsTxt
+  url: llms/climeworks-llms.txt
 - type: Website
+  url: https://climeworks.com/
+- type: Support
+  url: https://climeworks.com/contact
+- type: HelpCenter
+  url: https://climeworks.com/faqs
+- type: Blog
+  url: https://climeworks.com/news
+- type: GitHubOrganization
+  url: https://github.com/climeworks
+- type: Pricing
+  url: https://climeworks.com/actnow
+- type: Login
+  url: https://platform.climeworks.com/s/login
+- type: TermsOfService
+  url: https://climeworks.com/website-terms-use
+- type: TermsAndConditions
+  url: https://climeworks.com/general-terms-and-conditions
+- type: PrivacyPolicy
+  url: https://climeworks.com/website-privacy-policy
+- type: Careers
+  url: https://climeworks.com/careers
+- type: LinkedIn
+  url: https://www.linkedin.com/company/climeworks
+- type: Twitter
+  url: https://x.com/climeworks
+- type: Wikipedia
+  url: https://en.wikipedia.org/wiki/Climeworks
+- type: SecondaryMarket
   url: https://forgeglobal.com/climeworks_stock/
