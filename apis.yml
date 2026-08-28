@@ -12,6 +12,17 @@ description: 'Climeworks AG is a Swiss carbon dioxide removal company founded in
   developer portal, no API documentation and no machine-readable API contract, and its
   removals reach programmatic buyers through third-party carbon marketplaces instead.'
 url: https://raw.githubusercontent.com/api-evangelist/climeworks/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://avatars.githubusercontent.com/u/61453651?v=4
 x-type: company
 x-source: harvest:secondary-market
