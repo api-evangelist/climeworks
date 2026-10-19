@@ -1,0 +1,70 @@
+edges:
+- partner_name: Puro.earth (Puro Standard)
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://puro.earth/cdr-credit-suppliers/facilities/mammoth/
+  category: Carbon removal supplier
+  contract_reference:
+    register: Puro.earth CDR supplier facilities (puro.earth/cdr-credit-suppliers/facilities)
+    spec_file: null
+    standard: Puro Standard
+    role: puro-cdr-supplier
+    registered_name: Climeworks AG
+    matched_domain: climeworks.com
+    matched_by: domain
+    identity: wikidata Q55992517 'Climeworks' P856 https://climeworks.com
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+    certified_products:
+    - product: Puro Standard (methodology not stated on the page)
+      lapsed: false
+    signal_note: certified_products = one entry per Puro methodology with a facility whose Certified milestone is
+      Completed; facility counts never recorded
+    detected_by: sweep-carbon-environment.py
+    detected: '2026-10-19'
+  detected_by: sweep-carbon-environment.py
+  first_seen: '2026-10-19'
+- partner_name: CDR.fyi
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: third-party
+  evidence: https://www.cdr.fyi/supplier/climeworks
+  category: Carbon removal supplier
+  contract_reference:
+    register: CDR.fyi supplier pages (cdr.fyi/supplier/<slug>)
+    spec_file: null
+    standard: Durable carbon dioxide removal (CDR.fyi tracker)
+    role: cdr-fyi-tracked-supplier
+    registered_name: Climeworks
+    website: https://climeworks.com/
+    matched_domain: climeworks.com
+    matched_by: domain
+    identity_source: the supplier website stated on its CDR.fyi page (no lookup)
+    signal_note: 'participation only: a third-party tracker of CDR orders and deliveries certifies nothing; tonnes,
+      orders and purchasers are never recorded (purchasers are buyers: held)'
+    detected_by: sweep-carbon-environment.py
+    detected: '2026-10-19'
+  detected_by: sweep-carbon-environment.py
+  first_seen: '2026-10-19'
+generated: '2026-10-19'
+method: searched
+source:
+- https://edge.isometric.com/graphql
+- https://public-api.goldstandard.org/projects?page=1&size=100
+- https://puro.earth/puro_facility-sitemap.xml
+- https://www.cdr.fyi/sitemap.xml
+- https://www.icvcm.org/assessment-status/
+- https://rcrapublic.epa.gov/rcra-public-export/rest/api/v1/public/export/current/CSV
+checked:
+- https://edge.isometric.com/graphql
+- https://public-api.goldstandard.org/projects?page=1&size=100
+- https://puro.earth/puro_facility-sitemap.xml
+- https://rcrapublic.epa.gov/rcra-public-export/rest/api/v1/public/export/current/CSV
+- https://www.cdr.fyi/sitemap.xml
+- https://www.icvcm.org/assessment-status/
