@@ -64,22 +64,85 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Climeworks AG is a Swiss carbon dioxide removal company founded in 2009 as an ETH Zurich spin-off by Christoph Gebald and Jan Wurzbacher. It designs, builds and operates direct air capture (DAC) plants that filter CO2 out of ambient air and permanently mineralize it underground with storage partners such as Carbfix in Iceland — the Orca and Mammoth facilities. Through Climeworks Solutions it also sells risk-mitigated carbon removal portfolios blending its own DAC removals with certified third-party suppliers, tracked by corporate buyers in an online customer platform.
+Climeworks AG is a Swiss carbon dioxide removal company founded in 2009 as an ETH Zurich spin-off by Christoph Gebald and Jan Wurzbacher. It designs, builds and operates direct air capture (DAC) plants that filter CO2 out of ambient air through an adsorption-desorption cycle and then permanently mineralize it underground with storage partners such as Carbfix in Iceland - the Orca and Mammoth facilities. Through Climeworks Solutions it also sells risk-mitigated carbon removal portfolios that blend its own DAC removals with certified third-party suppliers, delivered within seven years of purchase and tracked by corporate buyers in an online customer platform. Climeworks is a supplier of carbon removal rather than a software vendor: it publishes no public developer portal, no API documentation and no machine-readable API contract, and its removals reach programmatic buyers through third-party carbon marketplaces instead.
 
-- https://climeworks.com/
+**Areas:** Company · Carbon Removal · Direct Air Capture · Carbon Dioxide Removal · Climate Tech · Sustainability · Energy · Switzerland · Climate
 
-## API surface
+## Climeworks on APIs.io
 
-**None.** As of the 2026-08-01 enrichment pass Climeworks publishes no public API, no developer portal and no machine-readable contract. Contract discovery probed `/openapi.json`, `/swagger.json`, `/api-docs`, `/.well-known/*` (security.txt, openid-configuration, oauth-authorization-server, api-catalog, ai-plugin.json, agent-card.json, agent.json) and `/llms.txt` on `climeworks.com`, and found no `api.`, `developer.`, `docs.` or `status.` subdomain in DNS. See `well-known/climeworks-well-known.yml` for the recorded statuses.
+Everything profiled for Climeworks is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/climeworks/](https://apis.io/providers/climeworks/)** — or go straight to one of the APIs or properties below.
 
-The only authenticated machine surface on the domain is `platform.climeworks.com`, a Salesforce Experience Cloud customer portal where buyers track carbon removal orders; its API paths are Salesforce's own and are login-gated. Programmatic purchase of Climeworks removals happens through third-party carbon marketplaces, not through a Climeworks API.
+### Published properties
 
-## Artifacts
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-| Artifact | File |
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Climeworks Domain Security](https://apis.io/security/climeworks/climeworks-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://climeworks.com/)
+- [Pricing](https://climeworks.com/actnow)
+- [Support](https://climeworks.com/contact)
+- [Blog](https://climeworks.com/news)
+- [Terms of service](https://climeworks.com/website-terms-use)
+- [Privacy policy](https://climeworks.com/website-privacy-policy)
+- [GitHub](https://github.com/climeworks)
+
+## API Evangelist rating
+
+**Kin Score 17.0** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
 |---|---|
-| Packages | `packages/climeworks-packages.yml` |
-| Well-known probe | `well-known/climeworks-well-known.yml` |
-| Conformance (CDR standards) | `conformance/climeworks-conformance.yml` |
-| Domain security | `security/climeworks-domain-security.yml` |
-| llms.txt | `llms/climeworks-llms.txt` |
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 4.8 |
+| Access clarity | 38.2 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 15.6** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/climeworks/](https://apis.io/providers/climeworks/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Climeworks: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/climeworks/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
